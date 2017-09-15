@@ -1,8 +1,8 @@
 // routes/api/index.js
 const express                = require('express');
 const router                 = express.Router();
-const productController      = require('../controllers/product')
-const manufacturerController = require('../controllers/manufacturer')
+const productController      = require('../../controllers/product')
+const manufacturerController = require('../../controllers/manufacturer')
 
 router.get('/manufacturers', manufacturerController.all);
 
