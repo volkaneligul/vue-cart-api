@@ -48,7 +48,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //app.use('/', index);
-app.use('/users', users);
+//app.use('/users', users);
 app.use('/api/v1', api)
 
 module.exports = app;
