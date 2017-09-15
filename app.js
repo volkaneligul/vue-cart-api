@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 // Require routes
 // They are yet to be created
-var index = require('./routes/index');
+//var index = require('./routes/index');
 const api = require('./routes/api/index');
 
 // Setup an express app
@@ -47,7 +47,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', index);
+//app.use('/', index);
 app.use('/users', users);
 app.use('/api/v1', api)
 
