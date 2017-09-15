@@ -1,6 +1,6 @@
-api/.DS_Store
-api/node_modules/
-api/dist/
-api/npm-debug.log
-api/yarn-error.log
-api/.idea
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+.idea
