@@ -14,7 +14,10 @@ const api = require('./routes/api/index');
 var app = express();
 // **************************
 
-mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_URL}`);
+//mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_URL}`);
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/tipster').then(() => { console.log('Database is connected') },
+err => { console.log('Can not connect to the database'+ err) }
+);
 
 // ********************
 
